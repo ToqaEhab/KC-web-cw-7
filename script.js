@@ -21,15 +21,17 @@ function Status (bmi) {
 
 }
 
-function calculate() {
+function calculate(){
 
     let weight = document.getElementById('weight').value 
-    let hight = document.getElementById('height').value 
+    let height = document.getElementById('height').value 
 
-    let bmi = BMI(weight,height)
+    let bmi=BMI(weight ,height)
     let desc = Status(bmi)
 
-    let div = document.getElementById('divTag')
+    let div = document.getElementById('result')
     div.innerText = bmi + " == " + desc 
 
 }
+
+
